@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #011227; /* Dark background for a futuristic look */
+    color: #eeeeee; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0c2a47, #011227); /* Updated gradient for a futuristic theme */
+}
+
+.login-container {
+    background-color: #1f4068; /* Dark container background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.4); /* Neon glow effect */
+    width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #eeeeee; /* White border for contrast */
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Slight scale-up on hover */
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.6); /* Enhanced glow on hover */
+}
+
+h2 {
+    color: #fafcfb; /* Neon color for a futuristic feel */
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600; /* Increased font weight for emphasis */
+    text-shadow: 0 0 10px #00ADB5, 0 0 20px #00ADB5; /* Neon text shadow */
+}
+
+p {
+    color: #aaaaaa; /* Slightly lighter gray for contrast */
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 16px;
+    border: 1px solid #444444; /* Darker border for subtlety */
+    border-radius: 8px;
+    background-color: #0c2a47; /* Darker background for inputs */
+    color: #eeeeee; /* Light text color for contrast */
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #00ADB5; /* Neon blue border on focus */
+    background-color: #011227; /* Darker background on focus */
+    outline: none;
+    box-shadow: 0 0 8px #00ADB5; /* Neon blue glow on focus */
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 2.5rem;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.eye-icon:hover {
+    color: #00ADB5; /* Neon blue on hover */
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 0.5rem;
+    font-size: 14px;
+    color: #eeeeee; /* Light text color for contrast */
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #00ADB5; /* Neon blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #007A80; /* Darker neon blue on hover */
+    text-decoration: underline;
+}
+
+.signin-btn {
+    padding: 0.8rem;
+    font-size: 16px;
+    background-color: #00ADB5; /* Neon blue */
+    color: #011227; /* Dark background for contrast */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signin-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.signup-option {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #aaaaaa; /* Slightly lighter gray for contrast */
+}
+
+.signup-option a {
+    color: #00ADB5; /* Neon blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-option a:hover {
+    color: #007A80; /* Darker neon blue on hover */
+    text-decoration: underline;
+}

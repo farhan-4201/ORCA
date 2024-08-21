@@ -1,0 +1,13 @@
+{
+    "name": "futuristic-dashboard",
+    "version": "1.0.0",
+    "description": "A futuristic and data-driven dashboard",
+    "main": "dashboard.js",
+    "scripts": {
+      "start": "open components/dashboard.html"
+    },
+    "dependencies": {
+      "chart.js": "^3.7.0"
+    }
+  }
+  

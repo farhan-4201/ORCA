@@ -1,0 +1,269 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #011227, #0c1c36); /* Dark futuristic gradient */
+    color: #eeeeee; /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #1f4068; /* Darker background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid #00ADB5; /* Neon blue accent */
+}
+
+.logo {
+    height: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #00ADB5); /* Neon glow */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Navigation Button Styling */
+nav .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners for modern look */
+}
+
+nav .nav-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+nav .nav-btn span {
+    font-size: 16px;
+}
+
+nav .nav-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Login and Signup Button Styling */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .nav-btn2 {
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Rounded corners for modern look */
+}
+
+.auth-buttons .nav-btn2:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #00ADB5; /* Neon blue border */
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #011227; /* Dark text */
+    background-color: #0f3460; /* Dark background */
+}
+
+.search-btn {
+    padding: 10px 15px;
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Visible Search Bar */
+.search-bar-container.visible {
+    display: flex;
+}
+
+/* Main Section Styling */
+main {
+    width: 80%;
+    margin-top: 50px;
+    background-color: #011227; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.4); /* Neon glow */
+}
+
+/* Search History */
+.search-history h2 {
+    margin-bottom: 10px;
+}
+
+.search-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.search-history th, .search-history td {
+    padding: 12px;
+    text-align: left;
+}
+
+.search-history th {
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    font-weight: bold;
+}
+
+.search-history td {
+    background-color: #1f4068; /* Darker background */
+    color: #00ADB5; /* Neon blue text */
+}
+
+.search-history .delete-btn {
+    background-color: #ff3b3b; /* Bright red for delete button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.search-history .delete-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.page-btn {
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.page-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1f4068; /* Darker background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    border-top: 2px solid #00ADB5; /* Neon blue accent */
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Navigation Button Styling */
+footer .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+footer .nav-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+footer .nav-btn span {
+    font-size: 16px;
+}
+
+footer .nav-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scaling on hover */
+}

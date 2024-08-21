@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCA</title>
+    <link rel="stylesheet" href="../styling/dashboard.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="../assets/logo.jpg" alt="ORCA Logo" class="logo">
+        <nav>
+            <button id="dashboardBtn" class="nav-btn">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </button>
+        </nav>
+        <ul class="projects-list">
+            <li><strong>EXISTING PROJECTS</strong></li>
+            <ul id="projectList"></ul>
+
+            <li>
+                <label for="uploadJson" class="add-project">+ Add New Project</label>
+                <input type="file" id="uploadJson" accept=".json" style="display:none;">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <header>
+            <h2>Dashboard</h2>
+            <button class="logout-btn">Logout</button>
+        </header>
+
+        <!-- Metrics Section -->
+        <section class="metrics">
+            <div class="metric">
+                <h3>Total Tweets</h3>
+                <p id="totalTweets">0</p>
+            </div>
+            <div class="metric">
+                <h3>Unique Users</h3>
+                <p id="uniqueUsers">0</p>
+            </div>
+            <div class="metric">
+                <h3>Overall Sentiment Analysis</h3>
+                <p id="overallSentiment">0</p>
+            </div>
+        </section>
+
+        <!-- Chart Section -->
+        <section class="chart">
+            <h3>Sentiment Analysis</h3>
+            <div id="sentimentChartContainer">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+        </section>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

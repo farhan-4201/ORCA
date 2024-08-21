@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../aset/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Tweets</title>
+    <link rel="stylesheet" href="/styling/toptweets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Top Tweets</h1>
+    </div>
+
+    <div id="top-tweet-content">
+        <!-- Top tweet data will be dynamically inserted here -->
+    </div>
+
+    <div class="tweets-container">
+        <input type="file" id="uploadJson" accept=".json" style="display: none;"> <!-- Hide the file input -->
+        <div id="cardsContainer"></div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="totalTweets"></div>
+        <div id="pagination-bottom"></div>
+    </div>
+
+    <script type="module" src="/scripts/dashboard.js"></script>
+    <script src="/scripts/toptweets.js" type="module"></script>
+</body>
+</html>

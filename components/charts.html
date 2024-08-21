@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Charts</title>
+    <link rel="stylesheet" href="/styling/searching.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .chart {
+            width: 45%;
+            min-width: 300px;
+        }
+        .full-width-chart {
+            width: 90%;
+            min-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4 text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Tweet Analysis Charts</h1>
+        <div class="chart-container">
+            <div class="chart">
+                <canvas id="uniqueUsersChart"></canvas>
+            </div>
+            <div class="chart">
+                <canvas id="sentimentAnalysisChart"></canvas>
+            </div>
+            <div class="full-width-chart">
+                <canvas id="tweetFrequencyChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/charts.js"></script>
+</body>
+</html>

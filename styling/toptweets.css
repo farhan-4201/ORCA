@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #011227; /* Dark futuristic background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #eeeeee; /* Light text for contrast */
+    flex-direction: column; /* Ensure content stacks vertically */
+}
+
+.header {
+    background-color: #1a1a1a; /* Dark header background */
+    color: #eeeeee; /* Light text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.4); /* Neon glow */
+    border-bottom: 2px solid #00ADB5; /* Neon blue accent */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: #00ADB5; /* Neon blue text color */
+}
+
+.tweets-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1f4068; /* Dark background for content area */
+    border-radius: 12px; /* Modern rounded corners */
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.4); /* Neon glow */
+    border: 2px solid #eeeeee; /* White border for contrast */
+    color: #eeeeee; /* Light text */
+    position: relative;
+    padding-bottom: 100px; /* Space for the fixed buttons */
+}
+
+.tweet {
+    border-bottom: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: left;
+    background-color: #2a2a2a;
+    color: #eeeeee; /* Light text */
+}
+
+.tweet:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+.tweet p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #eeeeee; /* Light text */
+}
+
+#loading {
+    display: none;
+    font-size: 28px;
+    color: #eeeeee; /* Light text */
+    text-align: center;
+    margin: 40px 0;
+}
+
+#refreshButton {
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#refreshButton:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.page-button, .prev-button, .next-button {
+    background-color: #00ADB5; /* Neon blue background */
+    color: #011227; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-button:hover, .prev-button:hover, .next-button:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+}
+
+.page-button.active {
+    background-color: #007A80; /* Active button with darker neon blue */
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+    color: #eeeeee; /* Light text */
+}
+
+.tweet-number {
+    font-size: 24px;
+    color: #00ADB5; /* Neon blue text color */
+    font-weight: bold;
+    text-align: right;
+}

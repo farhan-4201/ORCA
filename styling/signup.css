@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #011227; /* Dark background for a futuristic look */
+    color: #eeeeee; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #1f4068; /* Dark container background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    text-align: center;
+    border: 2px solid #eeeeee; /* White border for contrast */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.signup-container:hover {
+    transform: scale(1.02); /* Slight scale on hover for interactivity */
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.6); /* Enhanced glow on hover */
+}
+
+.back-link {
+    display: block;
+    text-align: left;
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #fafcfb; /* Neon color for a futuristic feel */
+    text-shadow: 0 0 10px #00ADB5, 0 0 20px #00ADB5;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #fafcfb; /* Neon color for labels */
+    text-shadow: 0 0 5px #00ADB5;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    background-color: #1a1a1a; /* Adjusted to dark theme */
+    color: #eeeeee;
+}
+
+.form-group input:focus {
+    border-color: #00ADB5; /* Neon blue border on focus */
+    outline: none;
+    box-shadow: 0 0 8px #00ADB5; /* Neon blue glow on focus */
+}
+
+.register-btn {
+    padding: 0.8rem;
+    font-size: 16px;
+    background-color: #00ADB5; /* Neon blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+}

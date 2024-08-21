@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCA Dashboard</title>
+    <link rel="stylesheet" href="../styling/landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.jpg" alt="ORCA Logo" class="logo">
+        <nav>
+            <a href="../components/dashboard.html" class="nav-btn">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <!-- Updated Search Button -->
+            <a href="../components/searching.html" id="searchBtn" class="nav-btn">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </a>
+            <!-- New Login and Signup Buttons -->
+        </nav>
+    </header>
+    
+    <div id="searchBarContainer" class="search-bar-container">
+        <input type="text" id="searchInput" placeholder="Enter your search query...">
+        <button id="searchSubmit" class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <main>
+        <section class="search-history">
+            <h2>User Search History:</h2>
+            <p>You have <strong>0 keywords</strong> left.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Search History</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="searchHistoryTable">
+                    <!-- Dynamic content will be inserted here by JS -->
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button class="page-btn">❮</button>
+                <span>1 of 2</span>
+                <button class="page-btn">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/landingpage.js"></script>
+    
+    <footer>
+        <nav>
+            <a href="../components/login.html" class="nav-btn">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>Login</span>
+            </a>
+            <a href="../components/signup.html" class="nav-btn">
+                <i class="fas fa-user-plus"></i>
+                <span>Signup</span>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

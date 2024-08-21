@@ -1,0 +1,180 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #011227; /* Dark background for a futuristic look */
+    color: #eeeeee; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 2rem auto; /* Added margin for spacing */
+    padding: 2rem; /* Increased padding for better spacing */
+    text-align: center;
+    background-color: #1f4068; /* Dark container background */
+    border-radius: 12px; /* Slightly more rounded corners for a modern feel */
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.4); /* Enhanced neon glow effect */
+    border: 2px solid #eeeeee; /* White border for contrast */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight scale on hover for interactivity */
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.6); /* Enhanced glow on hover */
+}
+
+/* Header and logo styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #00ADB5; /* Neon blue accent */
+    border-radius: 8px; /* Rounded bottom corners for smooth transition */
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #00ADB5); /* Neon glow on logo */
+}
+
+/* Background colors */
+.bg-white {
+    background-color: #1a1a1a; /* Adjusted to dark theme */
+}
+
+.bg-blue-500 {
+    background-color: #00ADB5; /* Neon blue */
+}
+
+/* Text colors */
+.text-gray-500 {
+    color: #aaaaaa; /* Slightly lighter gray for contrast */
+}
+
+.text-gray-600 {
+    color: #888888; /* Medium gray */
+}
+
+.text-gray-800 {
+    color: #eeeeee; /* Light gray for high contrast */
+}
+
+.text-white {
+    color: #ffffff; /* Pure white text */
+}
+
+.text-gray-400 {
+    color: #666666; /* Darker gray */
+}
+
+/* Hover states */
+.hover\:text-gray-700:hover {
+    color: #00ADB5; /* Neon blue on hover */
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #007A80; /* Darker neon blue on hover */
+}
+
+/* Border styles */
+.border-gray-300 {
+    border-color: #444444; /* Darker border for subtlety */
+}
+
+.focus\:outline-none:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00ADB5; /* Neon blue glow on focus */
+}
+
+.focus\:border-blue-500:focus {
+    border-color: #00ADB5; /* Neon blue border on focus */
+}
+
+/* Flex styles */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Additional styles */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.right-4 {
+    right: 1rem;
+}
+
+.transform {
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; /* Smooth transition for animations */
+}
+
+/* New styles for futuristic elements */
+.neon-text {
+    color: #00ADB5;
+    text-shadow: 0 0 10px #00ADB5, 0 0 20px #00ADB5;
+}
+
+.data-driven-chart {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #222831 25%, #00ADB5 100%);
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px rgba(0, 173, 181, 0.3);
+}
+
+/* Search card styles */
+.search-card {
+    width: 100%;
+    padding: 1.5rem; /* Increased padding for better spacing */
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 173, 181, 0.2); /* Subtle neon glow */
+    margin-bottom: 1.5rem; /* Ensuring proper spacing */
+    border: 1px solid #eeeeee; /* White border to match container */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.search-card:hover {
+    transform: scale(1.02); /* Slight scale on hover for interactivity */
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.4); /* Enhanced glow on hover */
+}
+
+.search-card input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #444444;
+    background-color: #0d0d0d;
+    color: #eeeeee;
+    box-shadow: 0 0 8px #00ADB5; /* Neon blue glow */
+    outline: none;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for interactivity */
+}
+
+.search-card input:focus {
+    box-shadow: 0 0 12px #00ADB5; /* Increased glow on focus */
+    background-color: #1f1f1f; /* Slightly lighter background on focus */
+}
